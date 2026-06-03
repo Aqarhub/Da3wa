@@ -1,0 +1,38 @@
+{
+  "name": "da3wa-server",
+  "version": "0.1.0",
+  "description": "Da3wa — Smart event invitation & QR attendance platform (Backend API)",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "smoke": "node scripts/smoke-test.js"
+  },
+  "keywords": [
+    "events",
+    "invitations",
+    "qr",
+    "attendance",
+    "express",
+    "mongodb"
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.0",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^10.1.0"
+  }
+}
